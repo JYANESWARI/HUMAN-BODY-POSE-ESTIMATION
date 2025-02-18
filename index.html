@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>pose detector</title>
+    <style>
+      body {
+        background-color: rgb(50, 172, 209);
+        margin: 0; /* Remove default margin to ensure the background color covers the entire viewport */
+        padding: 0;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+      }
+      h1 {
+        flex: 1;
+        text-align: center;
+        background-color: antiquewhite;
+      }
+      .img {
+        flex: 3;
+        background-color: aquamarine;
+        max-height: 60%;
+        max-width: 60%;
+        padding: 20px;
+      }
+      .buttondiv {
+        display: flex; /* Set display to flex */
+        justify-content: center; /* Horizontally center the button */
+        margin-top: 10px; /* Add margin-top for separation */
+      }
+      button {
+        background-color: blue;
+        padding: 10px;
+        border-radius: 5px;
+        color: antiquewhite;
+      }
+      footer {
+        display: flex;
+        background-color: antiquewhite;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>LIVE HUMAN POSE DETECTING WITH WEBCAM</h1>
+      <img class="img" src="../static/human.jpeg" />
+    </div>
+    <div class="buttondiv">
+      <button onclick="window.location.href='/video_feed'">
+        START POSE DETECTION
+      </button>
+    </div>
+    <footer>
+      <h6>BY G.MALLIKA</h6>
+    </footer>
+  </body>
+</html>
